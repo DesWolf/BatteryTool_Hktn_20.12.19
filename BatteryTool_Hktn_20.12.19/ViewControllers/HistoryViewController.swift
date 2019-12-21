@@ -33,7 +33,7 @@ class HistoryViewController: UITableViewController {
         let cell = tableView.dequeueReusableCell(withIdentifier: "HistoryCell", for: indexPath) as! HistoryViewCell
 
         cell.historyLabel.text = historicalData[indexPath.row].history
-
+        
         return cell
     }
 

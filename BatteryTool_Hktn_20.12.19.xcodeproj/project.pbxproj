@@ -7,19 +7,31 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9E6372B423ADDAF700535DD9 /* HistoryViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E6372B323ADDAF700535DD9 /* HistoryViewCell.swift */; };
+		9E6372B623ADDB0A00535DD9 /* CellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E6372B523ADDB0A00535DD9 /* CellModel.swift */; };
+		9EC6AF5C23ADC855002FE9D2 /* BatteryListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EC6AF5B23ADC855002FE9D2 /* BatteryListViewController.swift */; };
+		9EC6AF5E23ADC875002FE9D2 /* HistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EC6AF5D23ADC875002FE9D2 /* HistoryViewController.swift */; };
+		9EC6AF6023ADC8CE002FE9D2 /* BatteryViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EC6AF5F23ADC8CE002FE9D2 /* BatteryViewCell.swift */; };
+		9EC6AF6223ADC8EA002FE9D2 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EC6AF6123ADC8EA002FE9D2 /* MainViewController.swift */; };
+		9EC6AF6723ADCEDD002FE9D2 /* BatteryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EC6AF6623ADCEDD002FE9D2 /* BatteryModel.swift */; };
 		9EE27D0523ADC74A00BC0D43 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EE27D0423ADC74A00BC0D43 /* AppDelegate.swift */; };
 		9EE27D0723ADC74A00BC0D43 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EE27D0623ADC74A00BC0D43 /* SceneDelegate.swift */; };
-		9EE27D0923ADC74A00BC0D43 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EE27D0823ADC74A00BC0D43 /* ViewController.swift */; };
 		9EE27D0C23ADC74A00BC0D43 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9EE27D0A23ADC74A00BC0D43 /* Main.storyboard */; };
 		9EE27D0E23ADC74B00BC0D43 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9EE27D0D23ADC74B00BC0D43 /* Assets.xcassets */; };
 		9EE27D1123ADC74B00BC0D43 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9EE27D0F23ADC74B00BC0D43 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9E6372B323ADDAF700535DD9 /* HistoryViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryViewCell.swift; sourceTree = "<group>"; };
+		9E6372B523ADDB0A00535DD9 /* CellModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellModel.swift; sourceTree = "<group>"; };
+		9EC6AF5B23ADC855002FE9D2 /* BatteryListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BatteryListViewController.swift; sourceTree = "<group>"; };
+		9EC6AF5D23ADC875002FE9D2 /* HistoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryViewController.swift; sourceTree = "<group>"; };
+		9EC6AF5F23ADC8CE002FE9D2 /* BatteryViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BatteryViewCell.swift; sourceTree = "<group>"; };
+		9EC6AF6123ADC8EA002FE9D2 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		9EC6AF6623ADCEDD002FE9D2 /* BatteryModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BatteryModel.swift; sourceTree = "<group>"; };
 		9EE27D0123ADC74A00BC0D43 /* BatteryTool_Hktn_20.12.19.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BatteryTool_Hktn_20.12.19.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9EE27D0423ADC74A00BC0D43 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9EE27D0623ADC74A00BC0D43 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		9EE27D0823ADC74A00BC0D43 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		9EE27D0B23ADC74A00BC0D43 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9EE27D0D23ADC74B00BC0D43 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9EE27D1023ADC74B00BC0D43 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -37,6 +49,47 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9EC6AF6323ADC8F8002FE9D2 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				9EC6AF5B23ADC855002FE9D2 /* BatteryListViewController.swift */,
+				9EC6AF5F23ADC8CE002FE9D2 /* BatteryViewCell.swift */,
+				9EC6AF5D23ADC875002FE9D2 /* HistoryViewController.swift */,
+				9E6372B323ADDAF700535DD9 /* HistoryViewCell.swift */,
+				9EC6AF6123ADC8EA002FE9D2 /* MainViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		9EC6AF6423ADC917002FE9D2 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				9EE27D0A23ADC74A00BC0D43 /* Main.storyboard */,
+				9EE27D0F23ADC74B00BC0D43 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		9EC6AF6523ADC928002FE9D2 /* SupportFiles */ = {
+			isa = PBXGroup;
+			children = (
+				9EE27D0423ADC74A00BC0D43 /* AppDelegate.swift */,
+				9EE27D0623ADC74A00BC0D43 /* SceneDelegate.swift */,
+				9EE27D0D23ADC74B00BC0D43 /* Assets.xcassets */,
+				9EE27D1223ADC74B00BC0D43 /* Info.plist */,
+			);
+			path = SupportFiles;
+			sourceTree = "<group>";
+		};
+		9EC6AF6823ADCEF3002FE9D2 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				9EC6AF6623ADCEDD002FE9D2 /* BatteryModel.swift */,
+				9E6372B523ADDB0A00535DD9 /* CellModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		9EE27CF823ADC74A00BC0D43 = {
 			isa = PBXGroup;
 			children = (
@@ -56,13 +109,10 @@
 		9EE27D0323ADC74A00BC0D43 /* BatteryTool_Hktn_20.12.19 */ = {
 			isa = PBXGroup;
 			children = (
-				9EE27D0423ADC74A00BC0D43 /* AppDelegate.swift */,
-				9EE27D0623ADC74A00BC0D43 /* SceneDelegate.swift */,
-				9EE27D0823ADC74A00BC0D43 /* ViewController.swift */,
-				9EE27D0A23ADC74A00BC0D43 /* Main.storyboard */,
-				9EE27D0D23ADC74B00BC0D43 /* Assets.xcassets */,
-				9EE27D0F23ADC74B00BC0D43 /* LaunchScreen.storyboard */,
-				9EE27D1223ADC74B00BC0D43 /* Info.plist */,
+				9EC6AF6323ADC8F8002FE9D2 /* ViewControllers */,
+				9EC6AF6823ADCEF3002FE9D2 /* Models */,
+				9EC6AF6423ADC917002FE9D2 /* Storyboards */,
+				9EC6AF6523ADC928002FE9D2 /* SupportFiles */,
 			);
 			path = BatteryTool_Hktn_20.12.19;
 			sourceTree = "<group>";
@@ -138,8 +188,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9EE27D0923ADC74A00BC0D43 /* ViewController.swift in Sources */,
+				9EC6AF6223ADC8EA002FE9D2 /* MainViewController.swift in Sources */,
+				9EC6AF5C23ADC855002FE9D2 /* BatteryListViewController.swift in Sources */,
+				9EC6AF6723ADCEDD002FE9D2 /* BatteryModel.swift in Sources */,
+				9EC6AF6023ADC8CE002FE9D2 /* BatteryViewCell.swift in Sources */,
 				9EE27D0523ADC74A00BC0D43 /* AppDelegate.swift in Sources */,
+				9E6372B623ADDB0A00535DD9 /* CellModel.swift in Sources */,
+				9E6372B423ADDAF700535DD9 /* HistoryViewCell.swift in Sources */,
+				9EC6AF5E23ADC875002FE9D2 /* HistoryViewController.swift in Sources */,
 				9EE27D0723ADC74A00BC0D43 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -286,7 +342,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = WJR74JV9LN;
-				INFOPLIST_FILE = BatteryTool_Hktn_20.12.19/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/BatteryTool_Hktn_20.12.19/SupportFiles/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -304,7 +360,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = WJR74JV9LN;
-				INFOPLIST_FILE = BatteryTool_Hktn_20.12.19/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/BatteryTool_Hktn_20.12.19/SupportFiles/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

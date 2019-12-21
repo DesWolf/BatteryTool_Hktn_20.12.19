@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="7X7-fK-YEn">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Home-->
+        <scene sceneID="19M-Ye-Gp1">
+            <objects>
+                <viewController id="a7T-nI-gas" customClass="MainViewController" customModule="BatteryTool_Hktn_20_12_19" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="wNx-5c-mfJ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="системный экран который показывает общее энергопотребление" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mvk-Zr-Jib">
+                                <rect key="frame" x="103" y="177" width="198" height="300"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="Clu-hi-hsD" firstAttribute="trailing" secondItem="Mvk-Zr-Jib" secondAttribute="trailing" constant="74" id="2EA-xp-abr"/>
+                            <constraint firstItem="Mvk-Zr-Jib" firstAttribute="top" secondItem="Clu-hi-hsD" secondAttribute="top" constant="177" id="7Lk-18-bTh"/>
+                            <constraint firstItem="Mvk-Zr-Jib" firstAttribute="leading" secondItem="Clu-hi-hsD" secondAttribute="leading" constant="103" id="Zxa-vE-GKg"/>
+                            <constraint firstItem="Clu-hi-hsD" firstAttribute="bottom" secondItem="Mvk-Zr-Jib" secondAttribute="bottom" constant="141" id="jWq-TM-Y2M"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Clu-hi-hsD"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Home" id="wtb-gQ-QeZ"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="RfI-bj-7uw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="717.60000000000002" y="456.52173913043481"/>
+        </scene>
+        <!--История опереций-->
+        <scene sceneID="8eS-Fy-B40">
+            <objects>
+                <tableViewController id="7ZS-hX-0yS" customClass="HistoryViewController" customModule="BatteryTool_Hktn_20_12_19" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="xAh-aU-QvY">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="HistoryCell" id="e1u-CU-Vsr" customClass="HistoryViewCell" customModule="BatteryTool_Hktn_20_12_19" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="375" height="41"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="e1u-CU-Vsr" id="ZH6-GT-2RU">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="41"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SOX-IG-gw9">
+                                            <rect key="frame" x="15" y="10" width="345" height="21"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="SOX-IG-gw9" firstAttribute="top" secondItem="ZH6-GT-2RU" secondAttribute="top" constant="10" id="G82-i0-69N"/>
+                                        <constraint firstAttribute="bottom" secondItem="SOX-IG-gw9" secondAttribute="bottom" constant="10" id="Hl0-nT-CcR"/>
+                                        <constraint firstItem="SOX-IG-gw9" firstAttribute="leading" secondItem="ZH6-GT-2RU" secondAttribute="leading" constant="15" id="IHJ-22-6Cx"/>
+                                        <constraint firstAttribute="trailing" secondItem="SOX-IG-gw9" secondAttribute="trailing" constant="15" id="h6U-J6-93g"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="historyLabel" destination="SOX-IG-gw9" id="Qsw-ap-sn6"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="7ZS-hX-0yS" id="yBC-BL-Ycg"/>
+                            <outlet property="delegate" destination="7ZS-hX-0yS" id="G9c-pa-pnr"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="История опереций" id="Z8h-Rk-zmy"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="30L-J9-Tyi" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1644" y="1158.1709145427287"/>
+        </scene>
+        <!--History-->
+        <scene sceneID="faR-xr-3B9">
+            <objects>
+                <navigationController id="Hem-fy-7sj" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="History" id="2CQ-1z-U0i"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Jdd-uQ-hdz">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="7ZS-hX-0yS" kind="relationship" relationship="rootViewController" id="gJv-HR-kT8"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uEK-jP-y58" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="718" y="1158"/>
+        </scene>
+        <!--Экрасн со списком батарей-->
+        <scene sceneID="uGQ-wJ-gH0">
+            <objects>
+                <tableViewController id="SGy-EH-107" customClass="BatteryListViewController" customModule="BatteryTool_Hktn_20_12_19" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="Hf0-WH-Lbx">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="BatteryCell" rowHeight="84" id="mPA-ZR-ubT" customClass="BatteryViewCell" customModule="BatteryTool_Hktn_20_12_19" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="375" height="84"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="mPA-ZR-ubT" id="5dT-gB-N0Q">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="84"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Battery №1" translatesAutoresizingMaskIntoConstraints="NO" id="bnq-7w-hDK">
+                                            <rect key="frame" x="16" y="17" width="28" height="51"/>
+                                        </imageView>
+                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="aVe-w3-A36">
+                                            <rect key="frame" x="52" y="24" width="120" height="41"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Power: 5W" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3pI-rc-CN1">
+                                                    <rect key="frame" x="0.0" y="0.0" width="120" height="20.5"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Capasity: 100W" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NVd-2v-5kx">
+                                                    <rect key="frame" x="0.0" y="20.5" width="120" height="20.5"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </stackView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Serial" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hSf-cB-FTA">
+                                            <rect key="frame" x="282" y="32" width="78" height="21"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="78" id="Agp-2Z-W1D"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="bottomMargin" secondItem="bnq-7w-hDK" secondAttribute="bottom" constant="5" id="6zp-g8-KvU"/>
+                                        <constraint firstAttribute="trailing" secondItem="hSf-cB-FTA" secondAttribute="trailing" constant="15" id="92r-R4-MFB"/>
+                                        <constraint firstItem="bnq-7w-hDK" firstAttribute="top" secondItem="5dT-gB-N0Q" secondAttribute="topMargin" constant="6" id="J8P-3X-HYV"/>
+                                        <constraint firstItem="hSf-cB-FTA" firstAttribute="top" secondItem="5dT-gB-N0Q" secondAttribute="top" constant="32" id="NCH-A1-Pvh"/>
+                                        <constraint firstAttribute="bottom" secondItem="hSf-cB-FTA" secondAttribute="bottom" constant="31" id="SfK-cP-MEE"/>
+                                        <constraint firstItem="aVe-w3-A36" firstAttribute="top" secondItem="5dT-gB-N0Q" secondAttribute="topMargin" constant="13" id="a1v-vC-HFD"/>
+                                        <constraint firstItem="aVe-w3-A36" firstAttribute="leading" secondItem="bnq-7w-hDK" secondAttribute="trailing" constant="8" id="aYV-YN-TWr"/>
+                                        <constraint firstItem="bnq-7w-hDK" firstAttribute="leading" secondItem="5dT-gB-N0Q" secondAttribute="leadingMargin" id="itw-XU-lHD"/>
+                                        <constraint firstItem="hSf-cB-FTA" firstAttribute="leading" secondItem="3pI-rc-CN1" secondAttribute="trailing" constant="110" id="vCU-PV-khD"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="BatteryCapasityLabel" destination="NVd-2v-5kx" id="NjH-sZ-LhS"/>
+                                    <outlet property="BatteryPowerLabel" destination="3pI-rc-CN1" id="XT8-U1-aIE"/>
+                                    <outlet property="batteryImage" destination="bnq-7w-hDK" id="Gbu-5u-j9w"/>
+                                    <outlet property="serialNumber" destination="hSf-cB-FTA" id="yjK-fV-bij"/>
+                                    <segue destination="DHQ-aj-IHX" kind="show" id="16t-cw-PIb"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="SGy-EH-107" id="kFc-De-dbR"/>
+                            <outlet property="delegate" destination="SGy-EH-107" id="Y9F-E5-bti"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Экрасн со списком батарей" id="6vH-I1-eUs">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="bsn-Sj-apQ">
+                            <connections>
+                                <segue destination="yc3-FY-XBY" kind="show" id="zK7-7X-TDK"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fhq-py-Pnc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1634.4000000000001" y="-216.34182908545728"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="P4p-7n-Ouh">
+            <objects>
+                <viewController id="yc3-FY-XBY" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="TKM-Zc-oC3">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="QR Code Scaner" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZU7-u4-w2W">
+                                <rect key="frame" x="75" y="155" width="225" height="286"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="ZU7-u4-w2W" firstAttribute="centerX" secondItem="TKM-Zc-oC3" secondAttribute="centerX" id="4jc-LK-qsj"/>
+                            <constraint firstItem="ZU7-u4-w2W" firstAttribute="top" secondItem="ezL-Lc-efC" secondAttribute="top" constant="111" id="6eb-vX-Csa"/>
+                            <constraint firstItem="ZU7-u4-w2W" firstAttribute="leading" secondItem="ezL-Lc-efC" secondAttribute="leading" constant="75" id="EcV-9R-yAu"/>
+                            <constraint firstItem="ezL-Lc-efC" firstAttribute="bottom" secondItem="ZU7-u4-w2W" secondAttribute="bottom" constant="177" id="ICq-pd-F2u"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="ezL-Lc-efC"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="49u-dP-7BL"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pXh-Ro-4Nw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2586" y="-555"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="65w-cU-M9w">
+            <objects>
+                <viewController id="DHQ-aj-IHX" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="VCc-zK-zzn">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="teq-qW-grA"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="xDL-Ur-n5h"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7hf-rp-opw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2593" y="157"/>
+        </scene>
+        <!--Devises-->
+        <scene sceneID="iRv-Mb-qcG">
+            <objects>
+                <navigationController id="c0e-q4-85B" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Devises" id="7eJ-Ij-Vxr"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="2bF-gc-6pq">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="SGy-EH-107" kind="relationship" relationship="rootViewController" id="b93-Yg-ghW"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dHQ-X0-vj5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="719" y="-216"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="7cw-oj-4yP">
+            <objects>
+                <tabBarController id="7X7-fK-YEn" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="VC3-z5-lz5">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="a7T-nI-gas" kind="relationship" relationship="viewControllers" id="2dt-UG-7Qk"/>
+                        <segue destination="c0e-q4-85B" kind="relationship" relationship="viewControllers" id="07A-fC-O9K"/>
+                        <segue destination="Hem-fy-7sj" kind="relationship" relationship="viewControllers" id="IMB-yX-N1i"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eSc-oa-BE7" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-198" y="132"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Battery №1" width="28" height="42"/>
+    </resources>
+</document>

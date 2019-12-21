@@ -10,21 +10,44 @@ import UIKit
 
 class MainViewController: UIViewController {
 
+    @IBOutlet var homeLabel: UILabel!
+    
+    @IBOutlet var gridLabel: UILabel!
+    @IBOutlet var sunLabel: UILabel!
+    @IBOutlet var wattsBatteryLabel: UILabel!
+    @IBOutlet var lineBtH: UIImageView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        
+        fetchData()
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    
+    func fetchData() {
+            
+            //let jsonURLString =  "https://swiftbook.ru//wp-content/uploads/api/api_course"
+            //let jsonURLString =  "https://swiftbook.ru//wp-content/uploads/api/api_courses"
+            let jsonURLString =  "https://swiftbook.ru//wp-content/uploads/api/api_website_description"
+            
+            guard let url = URL(string: jsonURLString) else { return }
+            
+            URLSession.shared.dataTask(with: url) {(data, response, errror) in
+               
+                guard let data = data else { return }
+            
+                do{
+                    let websiteDescription = try JSONDecoder().decode(WebsiteDescription.self, from: data)
+                    print("\(websiteDescription.websiteName ?? "") \(websiteDescription.websiteDescription ?? "")")
+                } catch let error {
+                    print("Error serrialization Jason", error)
+                }
+        }.resume()
     }
-    */
-
+    
+    
+    
+    @IBAction func clickButton(_ sender: Any) {
+     
+}
 }

@@ -10,6 +10,8 @@
 		9E6372B423ADDAF700535DD9 /* HistoryViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E6372B323ADDAF700535DD9 /* HistoryViewCell.swift */; };
 		9E6372B623ADDB0A00535DD9 /* CellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E6372B523ADDB0A00535DD9 /* CellModel.swift */; };
 		9E6372B823AE028C00535DD9 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E6372B723AE028C00535DD9 /* LoginViewController.swift */; };
+		9E6372BA23AE52FC00535DD9 /* MainData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E6372B923AE52FC00535DD9 /* MainData.swift */; };
+		9E6372BC23AE534800535DD9 /* WebsiteDescription.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E6372BB23AE534800535DD9 /* WebsiteDescription.swift */; };
 		9EC6AF5C23ADC855002FE9D2 /* BatteryListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EC6AF5B23ADC855002FE9D2 /* BatteryListViewController.swift */; };
 		9EC6AF5E23ADC875002FE9D2 /* HistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EC6AF5D23ADC875002FE9D2 /* HistoryViewController.swift */; };
 		9EC6AF6023ADC8CE002FE9D2 /* BatteryViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EC6AF5F23ADC8CE002FE9D2 /* BatteryViewCell.swift */; };
@@ -26,6 +28,8 @@
 		9E6372B323ADDAF700535DD9 /* HistoryViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryViewCell.swift; sourceTree = "<group>"; };
 		9E6372B523ADDB0A00535DD9 /* CellModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellModel.swift; sourceTree = "<group>"; };
 		9E6372B723AE028C00535DD9 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		9E6372B923AE52FC00535DD9 /* MainData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainData.swift; sourceTree = "<group>"; };
+		9E6372BB23AE534800535DD9 /* WebsiteDescription.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebsiteDescription.swift; sourceTree = "<group>"; };
 		9EC6AF5B23ADC855002FE9D2 /* BatteryListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BatteryListViewController.swift; sourceTree = "<group>"; };
 		9EC6AF5D23ADC875002FE9D2 /* HistoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryViewController.swift; sourceTree = "<group>"; };
 		9EC6AF5F23ADC8CE002FE9D2 /* BatteryViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BatteryViewCell.swift; sourceTree = "<group>"; };
@@ -87,6 +91,8 @@
 		9EC6AF6823ADCEF3002FE9D2 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				9E6372B923AE52FC00535DD9 /* MainData.swift */,
+				9E6372BB23AE534800535DD9 /* WebsiteDescription.swift */,
 				9EC6AF6623ADCEDD002FE9D2 /* BatteryModel.swift */,
 				9E6372B523ADDB0A00535DD9 /* CellModel.swift */,
 			);
@@ -197,6 +203,8 @@
 				9EC6AF6023ADC8CE002FE9D2 /* BatteryViewCell.swift in Sources */,
 				9EE27D0523ADC74A00BC0D43 /* AppDelegate.swift in Sources */,
 				9E6372B623ADDB0A00535DD9 /* CellModel.swift in Sources */,
+				9E6372BC23AE534800535DD9 /* WebsiteDescription.swift in Sources */,
+				9E6372BA23AE52FC00535DD9 /* MainData.swift in Sources */,
 				9E6372B423ADDAF700535DD9 /* HistoryViewCell.swift in Sources */,
 				9EC6AF5E23ADC875002FE9D2 /* HistoryViewController.swift in Sources */,
 				9E6372B823AE028C00535DD9 /* LoginViewController.swift in Sources */,

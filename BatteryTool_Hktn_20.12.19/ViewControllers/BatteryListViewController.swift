@@ -36,9 +36,6 @@ class BatteryListViewController: UITableViewController {
         cell.batteryPowerLabel.text = batteries[indexPath.row].power
         cell.batteryCapasityLabel.text = batteries[indexPath.row].capasity
         cell.batteryImage.image = UIImage(named: batteries[indexPath.row].image)
-
-        
-
         
         return cell
     }

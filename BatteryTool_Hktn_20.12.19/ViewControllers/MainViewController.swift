@@ -26,7 +26,7 @@ class MainViewController: UIViewController {
             }
         func fetchData() {
             
-            let jsonURLString =  "https://swiftbook.ru//wp-content/uploads/api/api_course"
+            let jsonURLString =  "http://34.245.194.249/wats/get-statistic-day/WB-4E5436373555029B/"
             
             guard let url = URL(string: jsonURLString) else { return }
             
@@ -36,25 +36,29 @@ class MainViewController: UIViewController {
             
                 do{
                     let courses = try JSONDecoder().decode(Course.self, from: data)
-                    print(courses.name ?? "")
+                    
+                    print("consumption_load_from_grid \(courses.consumption_load_from_grid)")
+                    print("consumption_load_from_solar \(courses.consumption_load_from_solar)")
+                    print("capacity \(courses.battery_remaining_capacity) / \(courses.battery_full_capacity)")
                     
                     DispatchQueue.main.async {
                        
-                        self.homeLabel.text = "Home \(courses.id) kW"
-                        self.gridLabel.text = "Grid \(courses.id) kW"
-                        self.sunLabel.text = "Sun \(courses.id) kW"
-                        self.wattsBatteryLabel.text = "Charging \(courses.id) kW / Discharging \(courses.id) kW"
+                        self.homeLabel.text = "Home \(Double(round((courses.consumption_load_from_grid + courses.consumption_load_from_solar + courses.consumption_load_from_battery))) ) W"
+                        self.gridLabel.text = "\(Double(round(courses.consumption_load_from_grid))) W"
+                        self.sunLabel.text = "\(Double(round(courses.consumption_load_from_solar))) W"
+                        self.wattsBatteryLabel.text = "Capasity \(Double(round(courses.battery_remaining_capacity))) W / \(Double(round(courses.battery_full_capacity))) W"
+                    
+                        
                     }
                 } catch let error {
                     print("Error serrialization Jason", error)
                 }
         }.resume()
     }
-    
-    
-    
+
     
     @IBAction func clickButton(_ sender: Any) {
-     fetchData()
+       fetchData()
 }
 }
+

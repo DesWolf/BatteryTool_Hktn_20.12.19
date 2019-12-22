@@ -21,13 +21,12 @@ class MainViewController: UIViewController {
     
       override func viewDidLoad() {
                 super.viewDidLoad()
-                fetchData()
+        fetchData()
+        
             }
         func fetchData() {
             
-            //let jsonURLString =  "https://swiftbook.ru//wp-content/uploads/api/api_course"
             let jsonURLString =  "https://swiftbook.ru//wp-content/uploads/api/api_course"
-           // let jsonURLString =  "https://swiftbook.ru//wp-content/uploads/api/api_website_description"
             
             guard let url = URL(string: jsonURLString) else { return }
             
@@ -38,13 +37,22 @@ class MainViewController: UIViewController {
                 do{
                     let courses = try JSONDecoder().decode(Course.self, from: data)
                     print(courses.name ?? "")
-                   
                     
+                    DispatchQueue.main.async {
+                       
+                        self.homeLabel.text = "Home \(courses.id) kW"
+                        self.gridLabel.text = "Grid \(courses.id) kW"
+                        self.sunLabel.text = "Sun \(courses.id) kW"
+                        self.wattsBatteryLabel.text = "Charging \(courses.id) kW / Discharging \(courses.id) kW"
+                    }
                 } catch let error {
                     print("Error serrialization Jason", error)
                 }
         }.resume()
     }
+    
+    
+    
     
     @IBAction func clickButton(_ sender: Any) {
      fetchData()

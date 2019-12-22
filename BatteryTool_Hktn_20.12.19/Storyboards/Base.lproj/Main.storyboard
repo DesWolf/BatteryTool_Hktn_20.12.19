@@ -15,96 +15,122 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Home" translatesAutoresizingMaskIntoConstraints="NO" id="bU4-72-rQJ">
-                                <rect key="frame" x="140.5" y="90" width="94" height="94"/>
-                            </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Electricity" translatesAutoresizingMaskIntoConstraints="NO" id="hC8-Eo-RWg">
-                                <rect key="frame" x="50" y="203" width="66" height="82"/>
-                            </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Sun" translatesAutoresizingMaskIntoConstraints="NO" id="Sdf-1i-fGv">
-                                <rect key="frame" x="247" y="203" width="78" height="72"/>
-                            </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0.8 kW" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VjW-bd-kHi">
-                                <rect key="frame" x="163.5" y="64" width="48" height="18"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sun 0.8 kW" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="moW-Zc-EBq">
-                                <rect key="frame" x="273" y="300" width="78" height="18"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Total consumption" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mBP-IX-el0">
-                                <rect key="frame" x="124" y="30" width="127" height="18"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Battery" translatesAutoresizingMaskIntoConstraints="NO" id="j0c-HB-ltJ">
-                                <rect key="frame" x="138.5" y="342" width="98" height="48"/>
-                            </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Watts Battery" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SFB-Qs-plB">
-                                <rect key="frame" x="135" y="400" width="105" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Charging 0.0 kW / Discharging 0.0 kW" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5m7-ft-JV1">
-                                <rect key="frame" x="73" y="431" width="229.5" height="16"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="LineGray" translatesAutoresizingMaskIntoConstraints="NO" id="ccg-TI-gst">
-                                <rect key="frame" x="176" y="194" width="23" height="138"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="cmA-cw-TYX">
+                                <rect key="frame" x="124.5" y="30" width="126.5" height="146"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Total consumption" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mBP-IX-el0">
+                                        <rect key="frame" x="0.0" y="0.0" width="126.5" height="18"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Home 0.8 kW" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VjW-bd-kHi">
+                                        <rect key="frame" x="0.0" y="26" width="126.5" height="18"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Home" translatesAutoresizingMaskIntoConstraints="NO" id="bU4-72-rQJ">
+                                        <rect key="frame" x="0.0" y="52" width="126.5" height="94"/>
+                                    </imageView>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="8qf-RS-ZBW">
+                                <rect key="frame" x="20" y="220" width="85" height="80"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" ambiguous="YES" image="Electricity" translatesAutoresizingMaskIntoConstraints="NO" id="hC8-Eo-RWg">
+                                        <rect key="frame" x="9.5" y="0.0" width="66" height="65"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Grid 0.6 kW " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CA5-gD-Zal">
+                                        <rect key="frame" x="0.5" y="80" width="84.5" height="0.0"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="23" id="jwI-bG-03E"/>
-                                    <constraint firstAttribute="height" constant="138" id="pFo-Ub-zXc"/>
+                                    <constraint firstAttribute="height" constant="80" id="Xgx-IQ-fJk"/>
+                                    <constraint firstAttribute="width" constant="85" id="xvW-0O-Vf8"/>
+                                </constraints>
+                            </stackView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Group 9" translatesAutoresizingMaskIntoConstraints="NO" id="iRl-FP-gzu">
+                                <rect key="frame" x="109" y="186" width="157" height="172"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="157" id="KGV-At-sA1"/>
+                                    <constraint firstAttribute="height" constant="172" id="gcF-Wg-GQf"/>
                                 </constraints>
                             </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="4fE-sg-fRr">
+                                <rect key="frame" x="73" y="368" width="229.5" height="80.5"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="Battery" translatesAutoresizingMaskIntoConstraints="NO" id="j0c-HB-ltJ">
+                                        <rect key="frame" x="65.5" y="0.0" width="98" height="48"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Watts Battery" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SFB-Qs-plB">
+                                        <rect key="frame" x="62.5" y="58" width="104.5" height="12.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Charging 0.0 kW / Discharging 0.0 kW" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5m7-ft-JV1">
+                                        <rect key="frame" x="0.0" y="80.5" width="229.5" height="0.0"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80.5" id="sXz-Qh-QtP"/>
+                                    <constraint firstAttribute="width" constant="229.5" id="zlt-ia-kvu"/>
+                                </constraints>
+                            </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lpt-k4-rF0">
-                                <rect key="frame" x="164" y="489" width="46" height="30"/>
-                                <state key="normal" title="Button"/>
+                                <rect key="frame" x="116" y="518.5" width="142" height="30"/>
+                                <color key="backgroundColor" red="0.72045395869999995" green="0.65682846370000003" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Update Data"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="8"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="clickButton:" destination="a7T-nI-gas" eventType="touchUpInside" id="bMw-kk-HgQ"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Grid 0.6 kW " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CA5-gD-Zal">
-                                <rect key="frame" x="24" y="305" width="85" height="18"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="W5s-tC-qBw">
+                                <rect key="frame" x="270" y="220" width="85" height="80"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" ambiguous="YES" image="Sun" translatesAutoresizingMaskIntoConstraints="NO" id="Sdf-1i-fGv">
+                                        <rect key="frame" x="3.5" y="0.0" width="78" height="65"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Sun 0.8 kW" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="moW-Zc-EBq">
+                                        <rect key="frame" x="3.5" y="80" width="78" height="0.0"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="Bt5-P2-bF2"/>
+                                    <constraint firstAttribute="width" constant="85" id="MkS-O7-2If"/>
+                                </constraints>
+                            </stackView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="SFB-Qs-plB" firstAttribute="top" secondItem="j0c-HB-ltJ" secondAttribute="bottom" constant="10" id="3Zj-d6-85R"/>
-                            <constraint firstItem="moW-Zc-EBq" firstAttribute="top" secondItem="Sdf-1i-fGv" secondAttribute="bottom" constant="25" id="8lP-Gk-BNL"/>
-                            <constraint firstItem="Clu-hi-hsD" firstAttribute="trailing" secondItem="Sdf-1i-fGv" secondAttribute="trailing" constant="50" id="BJy-x5-YCk"/>
-                            <constraint firstItem="Clu-hi-hsD" firstAttribute="trailing" secondItem="moW-Zc-EBq" secondAttribute="trailing" constant="24" id="Cak-5J-GBh"/>
-                            <constraint firstItem="5m7-ft-JV1" firstAttribute="centerX" secondItem="wNx-5c-mfJ" secondAttribute="centerX" id="Hcy-2q-5Re"/>
-                            <constraint firstItem="VjW-bd-kHi" firstAttribute="centerX" secondItem="wNx-5c-mfJ" secondAttribute="centerX" id="I20-hG-iIe"/>
-                            <constraint firstItem="VjW-bd-kHi" firstAttribute="top" secondItem="mBP-IX-el0" secondAttribute="bottom" constant="16" id="J9g-iD-vwG"/>
-                            <constraint firstItem="CA5-gD-Zal" firstAttribute="leading" secondItem="Clu-hi-hsD" secondAttribute="leading" constant="24" id="Jyh-Na-hZA"/>
-                            <constraint firstItem="Sdf-1i-fGv" firstAttribute="top" secondItem="Clu-hi-hsD" secondAttribute="top" constant="203" id="QaS-xA-4l6"/>
-                            <constraint firstItem="lpt-k4-rF0" firstAttribute="leading" secondItem="Clu-hi-hsD" secondAttribute="leading" constant="164" id="UQp-FD-ezg"/>
-                            <constraint firstItem="CA5-gD-Zal" firstAttribute="top" secondItem="hC8-Eo-RWg" secondAttribute="bottom" constant="20" id="X3R-n3-hxo"/>
-                            <constraint firstItem="hC8-Eo-RWg" firstAttribute="top" secondItem="Clu-hi-hsD" secondAttribute="top" constant="203" id="YEA-py-3RE"/>
-                            <constraint firstItem="lpt-k4-rF0" firstAttribute="top" secondItem="5m7-ft-JV1" secondAttribute="bottom" constant="42" id="Zbc-Zf-cjy"/>
-                            <constraint firstItem="j0c-HB-ltJ" firstAttribute="centerX" secondItem="wNx-5c-mfJ" secondAttribute="centerX" id="Zdl-Sd-xQ9"/>
-                            <constraint firstItem="mBP-IX-el0" firstAttribute="centerX" secondItem="wNx-5c-mfJ" secondAttribute="centerX" id="dqn-5u-cxB"/>
-                            <constraint firstItem="ccg-TI-gst" firstAttribute="top" secondItem="bU4-72-rQJ" secondAttribute="bottom" constant="10" id="eKO-NT-Emn"/>
-                            <constraint firstItem="mBP-IX-el0" firstAttribute="top" secondItem="Clu-hi-hsD" secondAttribute="top" constant="30" id="eM3-o6-zMS"/>
-                            <constraint firstItem="SFB-Qs-plB" firstAttribute="centerX" secondItem="wNx-5c-mfJ" secondAttribute="centerX" id="ea7-Z4-vZh"/>
-                            <constraint firstItem="bU4-72-rQJ" firstAttribute="top" secondItem="VjW-bd-kHi" secondAttribute="bottom" constant="8" id="iqc-64-1EQ"/>
-                            <constraint firstItem="j0c-HB-ltJ" firstAttribute="top" secondItem="ccg-TI-gst" secondAttribute="bottom" constant="10" id="ojQ-Ha-EDn"/>
-                            <constraint firstItem="hC8-Eo-RWg" firstAttribute="leading" secondItem="Clu-hi-hsD" secondAttribute="leading" constant="50" id="q9q-kQ-tRT"/>
-                            <constraint firstItem="ccg-TI-gst" firstAttribute="centerX" secondItem="wNx-5c-mfJ" secondAttribute="centerX" id="tLE-kw-sEC"/>
-                            <constraint firstItem="5m7-ft-JV1" firstAttribute="top" secondItem="SFB-Qs-plB" secondAttribute="bottom" constant="10" id="uzq-GS-xNB"/>
-                            <constraint firstItem="bU4-72-rQJ" firstAttribute="centerX" secondItem="wNx-5c-mfJ" secondAttribute="centerX" id="wBW-oM-DSF"/>
-                            <constraint firstItem="Clu-hi-hsD" firstAttribute="trailing" secondItem="lpt-k4-rF0" secondAttribute="trailing" constant="165" id="waU-YK-EvY"/>
+                            <constraint firstItem="8qf-RS-ZBW" firstAttribute="leading" secondItem="Clu-hi-hsD" secondAttribute="leading" constant="20" id="1Kc-Lq-fJQ"/>
+                            <constraint firstItem="lpt-k4-rF0" firstAttribute="top" secondItem="4fE-sg-fRr" secondAttribute="bottom" constant="70" id="6sQ-Bv-Tcj"/>
+                            <constraint firstItem="lpt-k4-rF0" firstAttribute="leading" secondItem="Clu-hi-hsD" secondAttribute="leading" constant="116" id="UQp-FD-ezg"/>
+                            <constraint firstItem="cmA-cw-TYX" firstAttribute="top" secondItem="Clu-hi-hsD" secondAttribute="top" constant="30" id="X7W-fF-mLc"/>
+                            <constraint firstItem="8qf-RS-ZBW" firstAttribute="top" secondItem="Clu-hi-hsD" secondAttribute="top" constant="220" id="iT8-Iv-zPs"/>
+                            <constraint firstItem="cmA-cw-TYX" firstAttribute="centerX" secondItem="wNx-5c-mfJ" secondAttribute="centerX" id="iyw-og-d5A"/>
+                            <constraint firstItem="iRl-FP-gzu" firstAttribute="top" secondItem="cmA-cw-TYX" secondAttribute="bottom" constant="10" id="mcD-u8-4WF"/>
+                            <constraint firstItem="4fE-sg-fRr" firstAttribute="top" secondItem="iRl-FP-gzu" secondAttribute="bottom" constant="10" id="o7b-Yq-nwB"/>
+                            <constraint firstItem="W5s-tC-qBw" firstAttribute="top" secondItem="Clu-hi-hsD" secondAttribute="top" constant="220" id="q5Z-aM-0Wd"/>
+                            <constraint firstItem="iRl-FP-gzu" firstAttribute="centerX" secondItem="wNx-5c-mfJ" secondAttribute="centerX" id="tfL-YM-caU"/>
+                            <constraint firstItem="4fE-sg-fRr" firstAttribute="centerX" secondItem="wNx-5c-mfJ" secondAttribute="centerX" id="vXl-Yg-bCS"/>
+                            <constraint firstItem="Clu-hi-hsD" firstAttribute="trailing" secondItem="lpt-k4-rF0" secondAttribute="trailing" constant="117" id="waU-YK-EvY"/>
+                            <constraint firstItem="Clu-hi-hsD" firstAttribute="trailing" secondItem="W5s-tC-qBw" secondAttribute="trailing" constant="20" id="zSh-wm-eqR"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Clu-hi-hsD"/>
                     </view>
@@ -112,7 +138,6 @@
                     <connections>
                         <outlet property="gridLabel" destination="CA5-gD-Zal" id="k6Q-eW-KMH"/>
                         <outlet property="homeLabel" destination="VjW-bd-kHi" id="7ja-UU-vcl"/>
-                        <outlet property="lineBtH" destination="ccg-TI-gst" id="tNR-so-Mnt"/>
                         <outlet property="sunLabel" destination="moW-Zc-EBq" id="JRA-as-2RV"/>
                         <outlet property="wattsBatteryLabel" destination="5m7-ft-JV1" id="Spb-nI-ugh"/>
                     </connections>
@@ -455,8 +480,8 @@
         <image name="Battery" width="49" height="24"/>
         <image name="Battery №1" width="28" height="42"/>
         <image name="Electricity" width="33" height="41"/>
+        <image name="Group 9" width="75" height="74"/>
         <image name="Home" width="47" height="47"/>
-        <image name="LineGray" width="2" height="74"/>
         <image name="Sun" width="39" height="36"/>
         <image name="museum" width="18" height="20"/>
         <image name="time" width="20" height="20"/>

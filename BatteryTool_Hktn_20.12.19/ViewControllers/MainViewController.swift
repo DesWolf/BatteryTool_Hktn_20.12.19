@@ -11,24 +11,23 @@ import UIKit
 class MainViewController: UIViewController {
 
     @IBOutlet var homeLabel: UILabel!
-    
     @IBOutlet var gridLabel: UILabel!
     @IBOutlet var sunLabel: UILabel!
     @IBOutlet var wattsBatteryLabel: UILabel!
     @IBOutlet var lineBtH: UIImageView!
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        
-        fetchData()
-    }
+     let userdata = ["Course": "Networking"]
+    //private var courses = [Course]()
     
-    
-    func fetchData() {
+      override func viewDidLoad() {
+                super.viewDidLoad()
+                fetchData()
+            }
+        func fetchData() {
             
             //let jsonURLString =  "https://swiftbook.ru//wp-content/uploads/api/api_course"
-            //let jsonURLString =  "https://swiftbook.ru//wp-content/uploads/api/api_courses"
-            let jsonURLString =  "https://swiftbook.ru//wp-content/uploads/api/api_website_description"
+            let jsonURLString =  "https://swiftbook.ru//wp-content/uploads/api/api_course"
+           // let jsonURLString =  "https://swiftbook.ru//wp-content/uploads/api/api_website_description"
             
             guard let url = URL(string: jsonURLString) else { return }
             
@@ -37,17 +36,17 @@ class MainViewController: UIViewController {
                 guard let data = data else { return }
             
                 do{
-                    let websiteDescription = try JSONDecoder().decode(WebsiteDescription.self, from: data)
-                    print("\(websiteDescription.websiteName ?? "") \(websiteDescription.websiteDescription ?? "")")
+                    let courses = try JSONDecoder().decode(Course.self, from: data)
+                    print(courses.name ?? "")
+                   
+                    
                 } catch let error {
                     print("Error serrialization Jason", error)
                 }
         }.resume()
     }
     
-    
-    
     @IBAction func clickButton(_ sender: Any) {
-     
+     fetchData()
 }
 }
